@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="shortcut icon" href="./images/bbc favi2.png" type="image/x-icon">
+    <title>BBC - MANOS</title>
+</head>
+<body>
+    <section class="navBar">
+        <div class="navBar__logo">
+            <a href="#"><img src="./images/bbc logo black.png" width="85px" height="30px" alt="bbc logo"></a>
+        </div>
+        <div class="navBar__signin">
+            <a href="#"><img src="./images/sign in icon.jpg" width="30px" height="35px" alt="Sign in icon"></a>
+            <p class="hide"><a href="#">Sign in</a></p>  
+        </div>
+        <ul class="navBar__listGroup">
+            <li id="home" class="navBar__listGroup__items"><a href="#">Home</a></li>
+            <li id="news" class="navBar__listGroup__items"><a href="#">News</a></li>
+            <li id="sport"class="navBar__listGroup__items"><a href="#">Sport</a></li>
+            <li id="reel" class="navBar__listGroup__items"><a href="#">Reel</a></li>
+            <li class="navBar__listGroup__items hide"><a href="#">WorkLife</a></li>
+            <li class="navBar__listGroup__items hide"><a href="#">Travel</a></li>
+            <li class="navBar__listGroup__items hide"><a href="#">Future</a></li>
+            <li class="navBar__listGroup__items hide"><a href="#">Culture</a></li>
+            <li id="more" class="navBar__listGroup__items"><a href="#">More</a></li>
+        </ul>
+        <div class="navBar__search">
+            <input class="hide" type="text" class="navBar__search__input" placeholder="Search">
+            <a href="#">
+              <img class="navBar__search__img hide"
+               src="./images/searchicon.png"
+               width="15px" 
+               height="15px" 
+               alt="search icon">
+            </a>
+            <a href="#">
+              <img class="navBar__search__img unhide"
+               src="./images/search 1.png"
+               width="15px" 
+               height="15px" 
+               alt="search icon">
+            </a>
+        </div>
+    </section>
+    
+
+    <section class="date">
+        <p class="d1">Welcome to BBC.com</p>
+        <p id="d2" class="d2">Hello</p>
+    </section>
+
+    <section class="welcome">
+      <div class="media__container1">
+        <p class="p1">Biden and Johnson meet ahead of G7 Summit</p>
+        <p class="p2">US President is in the UK for the global leaders' summit in Cornwall which officially starts on friday</p>
+        <p class="p3">UK POLITICS</p>
+      </div>
+      <div class="media__container2">
+        
+        <div class="media2"> 
+          <img src="./images/m2.jpg" alt="picture of a train">
+          <p class="p1">Nigeria demands social media firms get local permits</p>
+          <p class="p3">AFRICA</p>
+        </div>
+        <div class="media3">
+          <img src="./images/m2.jpg" alt="picture of a food item">
+          <p class="p1">Over 350,000 Ethopians in famine conditions - UN</p>
+          <p class="p3">AFRICA</p>
+        </div>
+        <div class="media4">
+          <img src="./images/m6.jpg" alt="picture a cricket player">
+          <p class="p1">Lawrence counters after England slumps</p>
+          <p class="p3">CRICKET</p>
+        </div>
+        <div class="media5">
+          <img src="./images/m5.jpg" alt="picture of nigerians">
+          <p class="p1">Why Nigerians are risking arrest to tweet</p>
+          <p class="p3">AFRICA</p>
+        </div>
+      </div>
+       
+       
+    </section>
+
+
+
+<!-- 
+    <section class="mediaComponent">
+        <div class="mediaContainer">
+          <div class="media">
+            <div class="media__img"><img height="30px" width="30px" src="./images/officeicon.png" alt="student icon"></div>
+            <div class="media__text">
+              <p class="media__text1">Cedarcrest Hospitals are Number 1</p>
+              <p class="media__text2">In Nigeria</p>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media__img"><img height="30px" width="30px" src="./images/studenticon.jpg" alt="student icon"></div>
+            <div class="media__text">
+              <p class="media__text1">Proffesional Services</p>
+              <p class="media__text2">Qualified Staff</p>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media__img"><img height="30px" width="30px" src="./images/thumbsup.png" alt="student icon"></div>
+            <div class="media__text">
+              <p class="media__text1">State Of The Art Facilities</p>
+              <p class="media__text2">Satisfied Patients</p>
+            </div>
+          </div>
+        </div>
+        <div class="media email">
+        <div class="media__img"><img height="30px" width="30px" src="./images/envelope.jpg" alt="student icon"></div>
+        <div class="media__text">
+            <p class="media__text1">E-mail:info@cedarcresthospitals.com</p>
+        </div>
+        </div>
+    </section> -->
+          
+    
+    <script>
+        const d = new Date();
+          text = d.toDateString();
+        //   text = text[0] + text[1] + text[2] + text[4] + "day"
+         document.getElementById("d2").innerHTML = text
+    </script>
+</body>
+</html>

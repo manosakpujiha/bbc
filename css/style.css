@@ -1,0 +1,283 @@
+
+/*color palette*/
+
+:root {
+    --color-primary: rgb(255,255,255);
+    --color-secondary: rgb(0,0,0);
+    --color-accent: rgb(246,246,246);
+  }
+  a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+
+  /*Navbar*/
+
+.navBar {
+    background-color: var(--color-secondary);
+    color:var(--color-primary);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.navBar__logo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-left: 3rem;
+    margin-right: 1rem;
+}
+.navBar__signin {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 1px solid rgba(255, 255, 255, 0.371);
+    border-right: none;
+    padding-right: 3rem;
+    padding-left: 1rem;
+}
+.navBar__signin:hover {
+   border-bottom: 4px solid white;
+}
+.navBar__signin img {
+    position: relative;
+    top: 0.5rem;
+}
+.navBar__listGroup {
+    display: flex; 
+    margin: 0rem;
+}
+.navBar__listGroup__items {
+    list-style: none;
+    margin: 0;
+    border-left: 1px solid rgba(255, 255, 255, 0.336);
+    padding: 0.6rem 1rem 0.6rem 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.navBar__listGroup__items:hover {
+    border-bottom: 4px solid yellow;
+    }
+#more {
+    border-right: 1px solid rgba(255, 255, 255, 0.371);
+    padding-right: 4rem;
+}
+#more:hover {
+    border-bottom: 4px solid red;
+}
+#home:hover {
+    border-bottom: 4px solid blue;
+}
+#news:hover {
+    border-bottom: 4px solid purple;
+}
+#sport:hover {
+    border-bottom: 4px solid green;
+}
+#reel:hover {
+    border-bottom: 4px solid brown;
+}
+.unhide {
+    display: none;
+}
+.navBar__search {
+    display: flex;
+    padding: 0 0 0 3rem
+}
+.navBar__search__img {
+    position: relative;
+    right: 1.9rem;
+    top: 0.3rem;
+}
+
+@media screen and (max-width: 1124px) {
+    .navBar {
+        height: 33px;
+        width: 100%;
+        display: inline-flex;
+        justify-content: flex-start;
+    }
+    .navBar__logo {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        width: 6rem;
+        height: 95%;
+        padding-right: 0rem;
+    }
+    .navBar__logo img {
+        width:90%;
+        height: 25px;
+    }
+    .navBar__signin img {
+        position: relative;
+        top: 1px;
+    }
+    .navBar__signin, .navBar__signin p, .navBar__signin img  {
+        margin: 0;  
+        padding: 0;
+    }
+    .hide {
+        display: none;
+    } 
+    .navBar__listGroup__items {
+        list-style: none;
+        margin: 0;
+        border-left: 1px solid rgba(255, 255, 255, 0.336);
+       
+        font-size: 0.9rem;
+        width: 100%;
+    }
+    .navBar__listGroup  {
+        padding: 0.4rem 0.5rem 0.4rem 0.9rem;
+    }
+    .navBar__search {
+        padding: 0 1rem 0 0;
+    }
+    #more {
+        padding-right: 1rem;
+    }
+    .navBar__search__img {
+        position: relative;
+        right: 0.5rem;
+        top: 0.1rem;
+    }
+    .unhide {
+        display: block;
+    }
+    }
+
+/* Date section */
+.d1 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.d2 {
+    font-size: 1.3rem;
+}
+
+.date { 
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 3.2rem 0 3.2rem;
+}
+
+/* welcome section */
+
+.welcome {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(174, 146, 201);
+    flex-wrap: wrap;
+    color: var(--color-primary);
+}
+.media__container1 {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    background-image: url("../images/biden.jpg");
+    background-repeat: no-repeat; 
+    background-size: 100%;
+    background-color: rgb(150, 137, 137);
+    margin: 1rem 1rem 1rem 3rem;
+    width: 45%;
+    height: 22rem;
+}
+.media__container2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(150, 137, 137);
+    margin: 1rem 1rem 1rem 1rem;
+    width: 45%;
+    height: 22rem;
+}
+
+.media__container2 img {
+    width: 100%;
+    z-index: 0;
+}
+.media__container2 p {
+    margin: 0 0.3rem 0.3rem 0.3rem;
+    position: relative;
+    top: -5rem;
+} 
+.media__container2 .p3 {
+    padding-left: 0.5rem;
+}
+.media2, .media3, .media4, .media5 {
+    height: 43%;
+    width: 43%;
+    margin: 0.5rem;
+}
+.media__container1 p {
+    margin: 0 0 0.5rem 1rem;
+}
+.media__container1 .p1{
+    font-size: 2rem;
+}
+.media__container1 .p3{
+    border-left: 4px solid red;
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+}
+.media__container2 .p3 {
+    border-left: 4px solid red; 
+    padding-left: 0.5rem;
+    margin-bottom: 1rem; 
+}
+
+.media__container2 .p1 {
+   font-size: 1.2rem;
+   font-weight: bold;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .media__container1 {
+        background-size: 100%;
+        background-color: rgb(150, 137, 137);
+        margin: 1rem 1rem 1rem 3rem;
+        width: 100%;
+    }
+
+    .media__container2 {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(150, 137, 137);
+        margin: 1rem 1rem 1rem 3rem;
+        flex-wrap: nowrap;
+        width: 95%;
+    }
+
+    .media2, .media3, .media4, .media5 {
+        height: 100%;
+        width: 95%;
+        margin: 0.5rem;
+    }
+
+    .media2 img, .media3 img, .media4 img, .media5 img {
+        display: none;
+    }
+
+
+
+   
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
