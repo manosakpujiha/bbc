@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="shortcut icon" href="./images/bbc favi2.png" type="image/x-icon">
     <title>BBC - MANOS</title>
+   
 </head>
 <body>
-    <section class="navBar">
+    <section id="change" class="navBar">
         <div class="navBar__logo">
             <a href="#"><img src="./images/bbc logo black.png" width="85px" height="30px" alt="bbc logo"></a>
         </div>
@@ -27,7 +28,12 @@
             <li class="navBar__listGroup__items hide"><a href="#">Travel</a></li>
             <li class="navBar__listGroup__items hide"><a href="#">Future</a></li>
             <li class="navBar__listGroup__items hide"><a href="#">Culture</a></li>
-            <li id="more" class="navBar__listGroup__items"><a href="#">More</a></li>
+            <li id="more" class="navBar__listGroup__items collapsible collapsible--expanded">
+              <a  href="#">
+                More   
+                <img onclick="myFunction()" class="collapsible__arrow" src="./images/dropdownicon3.png" width="15px" height="15px" alt="">
+              </a>
+            </li>
         </ul>
         <div class="navBar__search">
             <input class="hide" type="text" class="navBar__search__input" placeholder="Search">
@@ -47,7 +53,21 @@
             </a>
         </div>
     </section>
-    
+      <section id="myDIV" class="dropdown" >
+        <div class="dropdown__heading ">
+          More
+        </div>
+        <div class="dropdown__menu">
+          <div class="bars" ><a href="">Music</a></div>
+          <div class="bars" ><a href="">TV</a></div>
+          <div class="bars" ><a href="">Weather</a></div>
+          <div class="bars" ><a href="">Sounds</a></div>
+        </div>
+      </section>  
+
+      <section class="advert">
+          <img src="./images/17463789725193365662.gif" width="970px" alt="250px">
+      </section>    
 
     <section class="date">
         <p class="d1">Welcome to BBC.com</p>
@@ -83,51 +103,15 @@
           <p class="p3">AFRICA</p>
         </div>
       </div>
-       
-       
+      
     </section>
 
+    <section class="news">
 
 
-<!-- 
-    <section class="mediaComponent">
-        <div class="mediaContainer">
-          <div class="media">
-            <div class="media__img"><img height="30px" width="30px" src="./images/officeicon.png" alt="student icon"></div>
-            <div class="media__text">
-              <p class="media__text1">Cedarcrest Hospitals are Number 1</p>
-              <p class="media__text2">In Nigeria</p>
-            </div>
-          </div>
-          <div class="media">
-            <div class="media__img"><img height="30px" width="30px" src="./images/studenticon.jpg" alt="student icon"></div>
-            <div class="media__text">
-              <p class="media__text1">Proffesional Services</p>
-              <p class="media__text2">Qualified Staff</p>
-            </div>
-          </div>
-          <div class="media">
-            <div class="media__img"><img height="30px" width="30px" src="./images/thumbsup.png" alt="student icon"></div>
-            <div class="media__text">
-              <p class="media__text1">State Of The Art Facilities</p>
-              <p class="media__text2">Satisfied Patients</p>
-            </div>
-          </div>
-        </div>
-        <div class="media email">
-        <div class="media__img"><img height="30px" width="30px" src="./images/envelope.jpg" alt="student icon"></div>
-        <div class="media__text">
-            <p class="media__text1">E-mail:info@cedarcresthospitals.com</p>
-        </div>
-        </div>
-    </section> -->
-          
+    </section>
     
-    <script>
-        const d = new Date();
-          text = d.toDateString();
-        //   text = text[0] + text[1] + text[2] + text[4] + "day"
-         document.getElementById("d2").innerHTML = text
-    </script>
+
+  <script async src="./javascript/javascript.js"></script>
 </body>
 </html>
