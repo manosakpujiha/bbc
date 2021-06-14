@@ -13,7 +13,7 @@ function myFunction() {
   if (x.style.display === "none" ) {
     z.style.color = "black";
     x.style.display = "flex";
-    y.style.background = "white";
+    y.style.background = "red";
   } else {
     z.style.color = "white";
     x.style.display = "none";
