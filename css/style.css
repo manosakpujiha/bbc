@@ -768,3 +768,40 @@ div.circle {
 .language-text a:hover {
   text-decoration: underline;
 }
+
+/* Explore the BBC */
+
+.explorebbc {
+  background-color: grey;
+  color: var(--color-primary);
+}
+
+.explore-bbc-content {
+  margin: 0rem 50px 1rem 50px;
+  padding-top: 0.5rem;
+}
+
+.heading-items {
+  display: flex;
+  width: 100%;
+}
+.heading-items-group {
+  width: 16.67%;
+  /* background-color: yellowgreen; */
+  margin-right: 1rem;
+  border-right: 1px solid whitesmoke;
+}
+
+.policies {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.policy-items {
+  margin: 0.5rem 1rem 0.5rem 0;
+}
+
+.copyright {
+  margin: 0.5rem 0 1rem 0;
+  padding-bottom: 1rem;
+}
