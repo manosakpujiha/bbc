@@ -597,7 +597,7 @@ font-size: 1.5rem;
 .editorspicks .nm1to9 {
     display: flex;
     flex-direction: column;
-    background-color: rgb(117, 117, 98);
+    /* background-color: rgb(117, 117, 98); */
     width: 66%;
 }
 
@@ -620,17 +620,23 @@ font-size: 1.5rem;
     margin-left: 15px;
     color: var(--color-primary);
     width: 33%;
+    font-weight: bold;
 }
 
-.circle {
+div.circle {
     display:inline-block;
-    width: 3.2rem;
-    height: 3rem;
-    line-height: 3rem;
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+    line-height: 1rem;
     border-radius: 100%;
     background-color: red;
     color: var(--color-primary);
     text-align: center;
+    padding: 1.5rem;
+    font-style: italic;
+    position: relative;
+    top: -6px;
 }
 
 .sidebarheading {
@@ -673,6 +679,57 @@ font-size: 1.5rem;
     padding-top: 2rem;
     font-size: 1.3rem;
 }
+
+
+
+
+/* More around the BBC */
+.morearoundbbc {
+    margin: 0 50px 0 50px;
+}
+
+
+
+.morearoundbbc .longadvert {
+    margin-left: 0;
+    margin-right: 15px;
+}
+
+.morearoundbbc .nm1to9 {
+    margin-left: 15px;
+    margin-right: 0;
+}
+
+.morearoundbbc div.circle {
+    background-image: url(../images/author6.png);
+    background-size: contain;
+    top: 1rem;
+}
+
+.morearoundbbc .sidebars {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.morearoundbbc div.circlesandsidebartexts {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.morearoundbbc .sidebarstext {
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.morearoundbbc .sidebarstext2 {
+    font-style: italic;
+    margin: 0;
+    position: relative;
+    left: -2.5rem;
+}
+
 
 
 
