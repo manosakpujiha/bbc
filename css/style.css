@@ -438,6 +438,11 @@
     width: 100%;
 }
 
+.nmmenulink {
+    border-left: 3px solid red;
+    padding-left: 5px;
+}
+
 /* weather */
 
 .weather--forecasts .weather--forecast--list {
@@ -449,6 +454,8 @@
     display: flex;
     flex-direction: row;
 }
+
+
 
 @media screen and (max-width: 1024px) {
     .news {
@@ -467,7 +474,6 @@
     .nm1to9 {
         display: flex;
         flex-direction: column;
-          
         }
 
     .longadvert { 
@@ -478,8 +484,213 @@
         display: flex;
         flex-direction: column;
         }
+}
+
+
+/* Reel */
+
+.reel {
+    background-image: url(../images/reelmedia5.webp);
+    background-repeat: no-repeat;
+    /* background-size: 100% 100%; */
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 5rem 0 5rem 0;
+    color: var(--color-primary);
+    height: 33rem;
+    padding-top: 2rem;
+    font-size: 1.3rem;
+}
+
+.reelheadings {
+    margin: 1rem 4rem 0rem 4rem;
+    background-color: blue;
+}
+
+.reelheadingandbutton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 2rem;
+    font-weight: bold;
+    /* margin: 0rem 4rem 0rem 4rem; */
+}
+
+.reelbutton {
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: var(--color-primary);
+    border-radius: 2rem;
+    outline: var(--color-primary);
+    padding: 3px 1rem 3px 5px;
+    width: 10rem;
+}
+
+
+.reelmedia {
+    display: flex;
+    flex-direction: row;
+    margin: 0rem 4rem 0 4rem;
+}
+
+
+div.reelmediaitem2, div.reelmediaitem3 {
+    margin-left: 1rem;
+}
+
+.reelmedia img {
+    width:100%; 
+    height:100%; 
+    object-fit: contain;
+    margin: 0rem;
+}
+.reelmediatext {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    text-align: left;
+    line-height: 1.5;
+    font-weight: bold;
+    margin: 0rem;
+}
+
+
+/* Africa news */
+.Africanews { 
+    margin: 5rem 50px 5rem 50px;
+}
+
+.Africanews #media__title2 {
+border-left: 4px solid yellow;
+padding-left: 5px;
+font-size: 1.5rem;
+}
+
+.Africanews img {
+    width:100%; 
+    /* height:100%;  */
+    object-fit: fill;
+    margin: 0rem;
+}
+
+
+
+/* Editor's Picks  */
+.editorspicks {
+    margin-left: 50px;
+    background-color: rgb(246,246,246);
 
 }
+
+.editorspicks #media__title {
+    font-size: 1.5rem;
+    border-left: 4px solid dodgerblue;
+    padding-left: 5px;
+}
+
+
+.editorspicks .mediagroupandlongadvert {
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+}
+
+.editorspicks .nm1to9 {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(117, 117, 98);
+    width: 66%;
+}
+
+.editorspicks .media__container1 {
+    display: flex;
+    flex-direction: column;
+    
+    /* background-image: url(../images/reelmedia5.webp); */
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    background-size: cover;
+    margin: 0 0 1rem 0;
+    padding: 0;
+}
+
+.editorspicks .longadvert {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    color: var(--color-primary);
+    width: 33%;
+}
+
+.circle {
+    display:inline-block;
+    width: 3.2rem;
+    height: 3rem;
+    line-height: 3rem;
+    border-radius: 100%;
+    background-color: red;
+    color: var(--color-primary);
+    text-align: center;
+}
+
+.sidebarheading {
+    height: 40px;
+    background-color: red;
+    line-height: 40px;
+    text-align: center;
+}
+
+.sidebars {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(54,54,54);
+    padding: 1rem;
+    height: 130px;
+}
+.sidebarstext {
+    font-size: 1.5rem;
+    padding: 0 1rem 1rem  1rem; 
+}
+
+.editorspicks .sidebars:nth-child(2n) {
+    background-color: black;
+}
+
+
+/* future planet */
+
+.futureplanets {
+    background-image: url(../images/reelbackground.jpg);
+    background-repeat: no-repeat;
+    /* background-size: 100% 100%; */
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 5rem 0 5rem 0;
+    color: var(--color-primary);
+    height: 33rem;
+    padding-top: 2rem;
+    font-size: 1.3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
