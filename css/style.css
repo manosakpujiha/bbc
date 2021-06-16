@@ -14,6 +14,14 @@ a {
   text-decoration: none;
 }
 
+.section--container {
+  margin: 0 50px 0 50px;
+  padding: 2rem 0 2rem 0;
+}
+.hideondesktop {
+  display: none;
+}
+
 /*Navbar*/
 
 .navBar {
@@ -95,9 +103,6 @@ a {
 }
 #reel:hover {
   border-bottom: 4px solid brown;
-}
-.unhide {
-  display: none;
 }
 .navBar__search {
   display: flex;
@@ -256,11 +261,16 @@ a {
 /* welcome section */
 
 .welcome {
-  display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   color: var(--color-secondary);
 }
+
+.main--container {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+}
+
 .media__container1 {
   display: flex;
   justify-content: flex-end;
@@ -269,17 +279,17 @@ a {
   background-repeat: no-repeat;
   background-size: 100%;
   color: var(--color-primary);
-  margin: 1rem 1rem 1rem 3rem;
-  width: 45%;
-  height: 22rem;
+  margin: 0rem 0 0rem 0;
+  width: 50%;
 }
+
 .media__container2 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   color: var(--color-primary);
-  margin: 1rem 1rem 1rem 1rem;
-  width: 45%;
+  margin: 0 0 0 0;
+  width: 50%;
   height: 22rem;
 }
 
@@ -296,13 +306,20 @@ a {
   padding-left: 0.5rem;
 }
 .media2,
-.media3,
+.media3 {
+  height: 43%;
+  width: 46%;
+  margin: 0 10px 10px 10px;
+}
+
 .media4,
 .media5 {
   height: 43%;
-  width: 43%;
-  margin: 0.5rem;
+  width: 46%;
+  margin: 10px 10px 10px 10px;
+  background-color: gold;
 }
+
 .media__container1 p {
   margin: 0 0 0.5rem 1rem;
 }
@@ -340,6 +357,7 @@ a {
     margin: 0rem 1rem 0rem 3rem;
     flex-wrap: nowrap;
     width: 95%;
+    background-color: violet;
   }
 
   .media2,
@@ -350,8 +368,8 @@ a {
     top: 5.5rem;
     height: 100%;
     width: 95%;
-    margin: 0.5rem;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.308);
+    margin: 0.5rem 0 0 0.5rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.308);
   }
 
   .media__container1 .p2,
@@ -377,9 +395,110 @@ a {
     font-size: 0.8rem;
   }
 }
+/* ************************************************************ */
+.welcomenew {
+  color: var(--color-primary);
+}
+.welcomegeneralcontainer {
+  display: flex;
+}
+.media__container1new {
+  background: url(../images/biden.jpg) no-repeat center;
+  background-size: cover;
+  height: 22rem;
+  width: 50%;
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
 
+.media__container2new {
+  width: 50%;
+  height: 22rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.media__container2new .media--group1new {
+  display: flex;
+  flex-direction: row;
+  height: 50%;
+  margin-bottom: 1rem;
+}
+.media__container2new .media--group2new {
+  display: flex;
+  flex-direction: row;
+  height: 50%;
+}
+
+.media1new {
+  background: url(../images/m5.jpg) no-repeat center;
+  background-size: cover;
+  margin-right: 1rem;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.media2new {
+  background: url(../images/m2.jpg) no-repeat center;
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.media-text1new {
+  margin: 0 0 0.5rem 0;
+  padding: 0 1rem 0 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.media-text2new {
+  margin: 0 0 0.5rem 1rem;
+  padding: 0 1rem 0 1rem;
+  border-left: 4px solid green;
+  /* background-color: yellowgreen; */
+}
+.p1new,
+.p2new,
+.p3new {
+  margin: 0 0 0.5rem 0;
+  padding: 0 1rem 0 1rem;
+}
+.p1new {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.p2new {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.849);
+}
+.p3new {
+  color: rgba(255, 255, 255, 0.801);
+  border-left: 4px solid yellow;
+  margin: 0 0 0.5rem 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .welcomegeneralcontainer {
+    flex-direction: column;
+  }
+
+  .media__container1new {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+/* ****************************************************************** */
 /* News */
-.news #media__title {
+.news h3#media__title {
   margin-left: 50px;
 }
 .news .mediagroupandlongadvert {
@@ -418,6 +537,9 @@ a {
   padding-left: 50px;
   padding-top: 20px;
 }
+.advtext {
+  text-align: end;
+}
 
 .news #stickyad {
   position: sticky;
@@ -425,13 +547,14 @@ a {
   width: 75%;
 }
 
-#stickyad img {
-  width: 100%;
-}
-
 .nmmenulink {
   border-left: 3px solid red;
   padding-left: 5px;
+}
+@media screen and (max-width: 1024px) {
+  .nm1to9 {
+    width: 95%;
+  }
 }
 
 /* weather */
@@ -452,12 +575,13 @@ a {
     top: 7rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
 
-  .mediagroupandlongadvert {
+  .news .mediagroupandlongadvert {
     display: flex;
     flex-direction: column-reverse;
-    flex-wrap: wrap;
+    /* background-color: red; */
   }
 
   .nm1to9 {
@@ -465,13 +589,20 @@ a {
     flex-direction: column;
   }
 
-  .longadvert {
+  .mediagroupandlongadvert .longadvert {
     width: 99%;
+    /* background-color: gold; */
+    margin: 1rem 50px 1rem 0;
+    padding-bottom: 1rem;
+    height: auto;
   }
 
   .news_media_group {
     display: flex;
     flex-direction: column;
+  }
+  .nmimage {
+    display: none;
   }
 }
 
@@ -492,7 +623,7 @@ a {
 
 .reelheadings {
   margin: 1rem 4rem 0rem 4rem;
-  background-color: blue;
+  /* background-color: blue; */
 }
 
 .reelheadingandbutton {
@@ -511,13 +642,12 @@ a {
   border-radius: 2rem;
   outline: var(--color-primary);
   padding: 3px 1rem 3px 5px;
-  width: 10rem;
 }
 
 .reelmedia {
   display: flex;
   flex-direction: row;
-  margin: 0rem 4rem 0 4rem;
+  margin: 0rem 50px 0 50px;
 }
 
 div.reelmediaitem2,
@@ -540,6 +670,18 @@ div.reelmediaitem3 {
   margin: 0rem;
 }
 
+@media screen and (max-width: 1024px) {
+  .reel {
+    justify-content: center;
+  }
+
+  .reelmedia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
 /* Africa news */
 .Africanews {
   margin: 5rem 50px 5rem 50px;
@@ -560,7 +702,7 @@ div.reelmediaitem3 {
 
 /* Editor's Picks  */
 .editorspicks {
-  margin-left: 50px;
+  /* margin: 0 50px 0 50px; */
   background-color: rgb(246, 246, 246);
 }
 
@@ -573,7 +715,7 @@ div.reelmediaitem3 {
 .editorspicks .mediagroupandlongadvert {
   display: flex;
   flex-direction: row;
-  margin-right: 50px;
+  /* margin-right: 50px; */
 }
 
 .editorspicks .nm1to9 {
@@ -594,6 +736,7 @@ div.reelmediaitem3 {
   background-size: cover;
   margin: 0 0 1rem 0;
   padding: 0;
+  height: 22rem;
 }
 
 .editorspicks .longadvert {
@@ -649,31 +792,47 @@ div.circle {
 /* future planet */
 
 .futureplanets {
-  background-image: url(../images/reelbackground.jpg);
+  background-image: url(../images/trees.jpg);
   background-repeat: no-repeat;
   /* background-size: 100% 100%; */
   background-attachment: fixed;
   background-size: cover;
-  margin: 5rem 0 5rem 0;
+  margin: 0 0 0 0;
   color: var(--color-primary);
   height: 33rem;
   padding-top: 2rem;
+  padding-top: 1rem;
   font-size: 1.3rem;
 }
 
 /* More around the BBC */
 .morearoundbbc {
-  margin: 0 50px 0 50px;
+  padding: 1rem 0 1rem 0;
+  /* background-color: red; */
+  background-color: rgba(246, 246, 246, 0.349);
+}
+
+.morearoundbbc {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.section--container #media__title {
+  margin-top: 0;
 }
 
 .morearoundbbc .longadvert {
   margin-left: 0;
   margin-right: 15px;
 }
+.morearoundbbc .media__container1 {
+  height: 22rem;
+}
 
 .morearoundbbc .nm1to9 {
   margin-left: 15px;
   margin-right: 0;
+  padding-right: 0;
 }
 
 .morearoundbbc div.circle {
@@ -707,13 +866,17 @@ div.circle {
 /* Languages */
 
 .languages {
-  margin: 5rem 50px 0 50px;
   padding-top: 1rem;
   background-color: rgb(246, 246, 246);
 }
 
 .languagetitle a {
   color: var(--color-secondary);
+}
+
+.language-container {
+  margin: 1rem 50px 0 50px;
+  padding-bottom: 2rem;
 }
 
 .languages-content {
@@ -728,7 +891,7 @@ div.circle {
 }
 
 .main-languages-content .language-group {
-  width: 33.33%;
+  width: 32.33%;
   /* background-color: gray; */
 }
 
@@ -772,7 +935,7 @@ div.circle {
 /* Explore the BBC */
 
 .explorebbc {
-  background-color: grey;
+  background-color: rgb(76, 76, 76);
   color: var(--color-primary);
 }
 
@@ -790,6 +953,7 @@ div.circle {
   /* background-color: yellowgreen; */
   margin-right: 1rem;
   border-right: 1px solid whitesmoke;
+  font-weight: 700;
 }
 
 .policies {
