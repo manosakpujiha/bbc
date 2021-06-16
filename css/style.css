@@ -228,16 +228,43 @@ a {
 }
 
 /* advert */
-.advert {
+.advertmain {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 1.5rem 0 1.5rem 0;
   background-color: rgb(246, 246, 246);
 }
+.advertmobile {
+  display: none;
+}
+
+.advertmain > p {
+  font-size: 0.8rem;
+  align-self: flex-end;
+  margin-right: 12rem;
+  margin-bottom: 0;
+}
+.advertmain .adv {
+  align-self: center;
+  margin-right: -10rem;
+}
 
 @media screen and (max-width: 1124px) {
-  .advert {
+  .advertdesktop {
     display: none;
+  }
+  .advertmobile {
+    display: block;
+  }
+  .advertmain > p {
+    margin-right: 7.5rem;
+  }
+  .advertmain .adv {
+    align-self: flex-end;
+    margin-right: 4rem;
+    margin-bottom: 0;
   }
 }
 
@@ -625,8 +652,6 @@ a {
 
 @media screen and (max-width: 1024px) {
   .news {
-    position: relative;
-    top: 7rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -726,17 +751,43 @@ div.reelmediaitem3 {
 
 @media screen and (max-width: 1024px) {
   .reel {
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 72rem;
+  }
+
+  .reelheadings {
+    margin: 0rem 10px 0rem 10px;
   }
 
   .reelmedia {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-content: center;
+    width: 95%;
+    margin: 1rem 10px 1rem 10px;
+    height: 70rem;
+  }
+  div.reelmediaitem,
+  div.reelmediaitem2,
+  div.reelmediaitem3 {
+    margin-left: 0rem;
+    margin-bottom: 2rem;
+  }
+
+  .reelmediatext {
+    margin: 0rem;
+  }
+
+  .reelmedia img {
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+    margin: 0rem;
   }
 }
 
-/* Africa news */
+/* Africa news ************************************************/
 .Africanews {
   margin: 5rem 50px 5rem 50px;
 }
@@ -749,14 +800,12 @@ div.reelmediaitem3 {
 
 .Africanews img {
   width: 100%;
-  /* height:100%;  */
   object-fit: fill;
   margin: 0rem;
 }
 
-/* Editor's Picks  */
+/* Editor's Picks ******************************************** */
 .editorspicks {
-  /* margin: 0 50px 0 50px; */
   background-color: rgb(246, 246, 246);
 }
 
@@ -769,21 +818,17 @@ div.reelmediaitem3 {
 .editorspicks .mediagroupandlongadvert {
   display: flex;
   flex-direction: row;
-  /* margin-right: 50px; */
 }
 
 .editorspicks .nm1to9 {
   display: flex;
   flex-direction: column;
-  /* background-color: rgb(117, 117, 98); */
   width: 66%;
 }
 
 .editorspicks .media__container1 {
   display: flex;
   flex-direction: column;
-
-  /* background-image: url(../images/reelmedia5.webp); */
   background-repeat: no-repeat;
   background-size: 100%;
   width: 100%;
@@ -843,7 +888,22 @@ div.circle {
   background-color: black;
 }
 
-/* future planet */
+@media screen and (max-width: 1024px) {
+  .editorspicks .mediagroupandlongadvert {
+    display: flex;
+    flex-direction: column;
+  }
+  .editorspicks .nm1to9 {
+    width: 100%;
+  }
+
+  .editorspicks .longadvert {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+/* future planet ******************************************************/
 
 .futureplanets {
   background-image: url(../images/trees.jpg);
@@ -857,6 +917,12 @@ div.circle {
   padding-top: 2rem;
   padding-top: 1rem;
   font-size: 1.3rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .futureplanets {
+    height: 72rem;
+  }
 }
 
 /* More around the BBC */
@@ -923,54 +989,48 @@ div.circle {
   padding-top: 1rem;
   background-color: rgb(246, 246, 246);
 }
-
 .languagetitle a {
   color: var(--color-secondary);
 }
-
 .language-container {
   margin: 1rem 50px 0 50px;
   padding-bottom: 2rem;
 }
 
 .languages-content {
-  /* background-color: violet; */
   display: flex;
 }
 
 .main-languages-content {
-  /* background-color: tomato; */
   display: flex;
   width: 40%;
 }
 
 .main-languages-content .language-group {
   width: 32.33%;
-  /* background-color: gray; */
 }
 
 .more-languages-contentandheadings {
-  /* background-color: blue; */
   display: flex;
   flex-direction: column;
   width: 60%;
 }
 
 .language-group {
-  /* background-color: green; */
   display: flex;
   flex-direction: column;
 }
-
 .more-language-groupscolumns {
-  /* background-color: orange; */
+  display: flex;
+}
+.language--groups1,
+.language--groups2 {
   display: flex;
 }
 
 .language-text {
   margin: 0 1rem 1rem 0;
 }
-
 .more-language-groupscolumns .language-group {
   margin-right: 1rem;
   font-size: 0.9rem;
@@ -984,6 +1044,22 @@ div.circle {
 }
 .language-text a:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 1024px) {
+  .languages-content {
+    flex-direction: column;
+  }
+  .main-languages-content {
+    width: 100%;
+  }
+  .more-languages-contentandheadings {
+    width: 100%;
+  }
+  .language--groups1,
+  .language--groups2 {
+    flex-direction: column;
+  }
 }
 
 /* Explore the BBC */
