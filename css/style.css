@@ -22,6 +22,13 @@ a {
   display: none;
 }
 
+@media screen and (max-width: 1024px) {
+  .section--container {
+    margin: 0 15px 0 15px;
+    padding: 1rem 0 1rem 0;
+  }
+}
+
 /*Navbar*/
 
 .navBar {
@@ -265,6 +272,9 @@ a {
     align-self: flex-end;
     margin-right: 4rem;
     margin-bottom: 0;
+  }
+  .advertmain {
+    margin-top: 2rem;
   }
 }
 
@@ -513,10 +523,6 @@ a {
 }
 
 @media screen and (max-width: 1024px) {
-  .section--container {
-    margin: 0 15px 0 15px;
-    padding: 1rem 0 1rem 0;
-  }
   .welcomegeneralcontainer {
     display: flex;
     flex-direction: column;
@@ -585,17 +591,11 @@ a {
 .news .mediagroupandlongadvert {
   display: flex;
   flex-direction: row;
-  /* justify-content: center; */
   margin: 0 50px 0 50px;
-  /* background-color: green; */
 }
 .news_media_group {
   display: flex;
   flex-direction: row;
-  /* flex-wrap: wrap; */
-  /* justify-content: space-evenly; */
-  /* margin-left: 50px; */
-  /* background-color: tomato; */
 }
 
 .nm1to9 {
@@ -636,6 +636,16 @@ a {
   .nm1to9 {
     width: 95%;
   }
+  .news_media_group #nm2,
+  .news_media_group #nm3 {
+    margin-left: 0px;
+  }
+  .news .mediagroupandlongadvert {
+    margin: 0 10px 0 10px;
+  }
+  .news h3#media__title {
+    margin-left: 10px;
+  }
 }
 
 /* weather */
@@ -674,6 +684,7 @@ a {
     margin: 1rem 50px 1rem 0;
     padding-bottom: 1rem;
     height: auto;
+    display: none;
   }
 
   .news_media_group {
@@ -802,6 +813,11 @@ div.reelmediaitem3 {
   width: 100%;
   object-fit: fill;
   margin: 0rem;
+}
+@media screen and (max-width: 1024px) {
+  .Africanews {
+    margin: 5rem 10px 5rem 10px;
+  }
 }
 
 /* Editor's Picks ******************************************** */
@@ -983,18 +999,27 @@ div.circle {
   left: -2.5rem;
 }
 
+@media screen and (max-width: 1024px) {
+  .morearoundbbc .nm1to9 {
+    margin-left: 0px;
+    margin-bottom: 1rem;
+  }
+}
+
 /* Languages */
 
 .languages {
-  padding-top: 1rem;
+  padding-top: 0.5rem;
   background-color: rgb(246, 246, 246);
 }
 .languagetitle a {
   color: var(--color-secondary);
+  margin-bottom: 0;
+  margin-top: 0;
 }
 .language-container {
   margin: 1rem 50px 0 50px;
-  padding-bottom: 2rem;
+  padding-bottom: 0.5rem;
 }
 
 .languages-content {
@@ -1060,6 +1085,10 @@ div.circle {
   .language--groups2 {
     flex-direction: column;
   }
+  .language-container {
+    margin: 1rem 10px 0 10px;
+    /* padding-bottom: 0.5rem; */
+  }
 }
 
 /* Explore the BBC */
@@ -1070,32 +1099,86 @@ div.circle {
 }
 
 .explore-bbc-content {
-  margin: 0rem 50px 1rem 50px;
+  margin: 0rem 50px 0rem 50px;
   padding-top: 0.5rem;
+  padding-bottom: 1rem;
 }
-
+.heading--items-dualgrouping {
+  display: flex;
+  flex-direction: row;
+  width: 33.33%;
+}
 .heading-items {
   display: flex;
   width: 100%;
+  border-bottom: 1px solid rgba(245, 245, 245, 0.466);
 }
 .heading-items-group {
-  width: 16.67%;
-  /* background-color: yellowgreen; */
-  margin-right: 1rem;
-  border-right: 1px solid whitesmoke;
+  width: 50%;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  border-right: 1px solid rgba(245, 245, 245, 0.466);
   font-weight: 700;
+}
+.g1 {
+  margin-left: 0rem;
+}
+.heading-items-group p {
+  margin-top: 0rem;
+}
+.heading-items-group .f1 {
+  margin-bottom: 0rem;
 }
 
 .policies {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 0.5rem;
 }
-
 .policy-items {
-  margin: 0.5rem 1rem 0.5rem 0;
+  margin: 0.5rem 1rem 0.3rem 0;
+}
+.copyright {
+  margin: 0.5rem 0 0rem 0;
+  padding-bottom: 0rem;
+}
+.copyright a {
+  /* font-weight: 600; */
+  color: gold;
+  opacity: 0.8;
+}
+.copyright a:hover {
+  opacity: 1;
+  text-decoration: underline;
 }
 
-.copyright {
-  margin: 0.5rem 0 1rem 0;
-  padding-bottom: 1rem;
+@media screen and (max-width: 1024px) {
+  .explore-bbc-content {
+    margin: 0rem 10px 0rem 10px;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .heading--items-dualgrouping {
+    flex-direction: column;
+  }
+
+  .heading-items-group {
+    width: 100%;
+  }
+  .group2,
+  .group3 {
+    margin-left: 0.5rem;
+  }
+
+  .g2 {
+    margin-left: 0;
+  }
+  .policies {
+    margin-bottom: 1.5rem;
+  }
+
+  .heading-items-group {
+    margin-left: 0rem;
+  }
 }
